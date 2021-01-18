@@ -17,7 +17,9 @@ Configure ASP.NET Core App to access Key Vault
 Install below nuget packages
 
 Install-Package Azure.Security.KeyVault.Secrets
+
 Install-Package Microsoft.Extensions.Configuration.AzureKeyVault
+
 Install-Package Azure.Identity
 
 need to modify your Host Builder logic to add the code needed. We can use the ConfiureAppConfiguration() method to plug in Azure Key Vault code into ASP.NET Core Application configuration.
